@@ -97,6 +97,10 @@ class MaterialResource extends Resource
                     Forms\Components\Textarea::make('observacao')
                         ->maxLength(65535),
 
+                    Forms\Components\Toggle::make('personal')
+                        ->label('Pessoal')
+                        ->default('0'),
+
                 ])
             ]);
     }
