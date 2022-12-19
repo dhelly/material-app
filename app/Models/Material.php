@@ -13,7 +13,21 @@ class Material extends Model implements HasMedia
 {
     use HasFactory, InteractsWithMedia;
 
-    protected $fillable = ['descricao', 'sala','tombo', 'orgao', 'marca', 'modelo', 'responsavel', 'origem', 'estado', 'observacao', 'user_id', 'personal'];
+    protected $fillable = [
+        'descricao',
+        'sala',
+        'tombo',
+        'orgao',
+        'marca',
+        'modelo',
+        'responsavel',
+        'origem',
+        'estado',
+        'observacao',
+        'user_id',
+        'personal',
+        'annotation',
+        'devolution'];
 
     // public function registerMediaConversions(Media $media = null): void
     // {

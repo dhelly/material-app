@@ -101,6 +101,14 @@ class MaterialResource extends Resource
                         ->label('Pessoal')
                         ->default('0'),
 
+                    Forms\Components\Textarea::make('annotation')
+                        ->label('Jaqueline Anotação')
+                        ->maxLength(65535),
+
+                    Forms\Components\Toggle::make('devolution')
+                        ->label('Devolução')
+                        ->default('0'),
+
                 ])
             ]);
     }
